@@ -1,0 +1,120 @@
+/* CSS Document */
+body, html {
+  background-color: white;
+  margin:0;
+  padding:0;
+  text-align:center;  
+  height:100%;
+  min-height: 750px;
+  width:100%; 
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color:rgb(50,50,50); 
+  display: flex;
+}
+
+.button {
+  font-family: 'BenchNine', sans-serif;
+  height: 120px;
+  width:100%;
+  background-color:#f7268e;
+  border: 0px;
+  font-size: 18px;
+  font-weight:700;
+  color: white;
+  text-decoration: none; 
+  transition: all 0.1s ease-in;
+}
+
+.button:hover {
+background-color:#ff0f86;
+cursor:pointer;
+-webkit-box-shadow: 0px 11px 11px -9px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 11px 11px -9px rgba(0,0,0,0.39);
+box-shadow: 0px 11px 11px -9px rgba(0,0,0,0.39);
+}
+
+.button:active {
+  background-color:#e50e7a;
+}
+
+/* FLEXBOX TESTI */
+
+.page {
+  width:100%;
+  height:65%;
+  background-color:rgb(240,240,240);
+  background-color:white;
+  text-align:center;
+  position:relative; 
+}
+
+.page-container {
+  width: 100%;
+  max-width: 800px;
+  background-color:white;
+  text-align:center;
+  position: absolute;
+  display:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  background-color:white;
+  width: 100%;
+  height: 35%;
+  padding-top:50px;
+}
+
+.headerimage {
+  max-width:100%;
+  max-height:100%;
+}   
+
+/* SOUNDBOARD */
+
+.soundboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  height: 520px;
+}
+
+.soundboard-content {
+  margin:auto;
+  flex: 0 1 19%;
+  background-color:orange;
+}
+
+.wrapper {
+width:100%;
+height:100%;
+background-color:yellow; 
+}
+
+/* -- Media queries -- */
+
+@media screen and (max-width : 530px) { 
+
+.soundboard-content {
+  flex: 0 1 24%;
+} 
+
+}
+
+@media screen and (max-width : 354px) { 
+
+.soundboard-content {
+  flex: 0 1 33%;
+} 
+
+}
